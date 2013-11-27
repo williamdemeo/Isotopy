@@ -8,8 +8,9 @@ submitted to the journal [Algebra Universalis](http://link.springer.com/journal/
 **Author:** William DeMeo (williamdemeo at gmail)  
 **Date:** February 9, 2013  
 **Institution:** Department of Mathematics, University of South Carolina; Columbia 29208; USA  
-**Keywords:** isotopy, isotopic algebras, congruence lattice  
+**Keywords:** isotopy; isotopic algebras; congruence lattice  
 
-**Abstract:** We give examples of pairs of isotopic algebras with nonisomorphic congruence
-lattices.
+**Abstract:** We present pairs of isotopic algebras with congruence lattices of different
+orders, thus answering negatively the question of whether isotopic algebras
+must have isomorphic congruence lattices.  
 
