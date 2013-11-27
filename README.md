@@ -1,8 +1,8 @@
 Isotopy
 =======
 
-This repository contains a files related to a research paper submitted to the 
-journal [Algebra Universalis](http://link.springer.com/journal/12) about *isotopic algebras*.
+This repository contains a files related to a research paper  about *isotopic algebras* 
+submitted to the journal [Algebra Universalis](http://link.springer.com/journal/12).
 
 **Title:** Isotopic algebras with nonisomorphic congruence lattices  
 **Author:** William DeMeo (williamdemeo at gmail)  
