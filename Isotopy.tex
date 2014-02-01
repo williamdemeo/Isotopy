@@ -5,91 +5,36 @@
  \received{\dots}{\dots}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{latexsym,amscd}
-\usepackage{amsmath,amssymb,amsthm,url,mathrsfs}
-\usepackage{enumerate,stmaryrd,scalefnt}
-% \usepackage{tikz}
-\usepackage{color}
-% \usetikzlibrary{calc}
+\usepackage{latexsym,amscd,amsmath,amssymb,amsthm,url,mathrsfs}
+\usepackage{enumerate,stmaryrd,scalefnt,color}
 
 \usepackage[colorlinks=true,urlcolor=black,linkcolor=black,citecolor=black]{hyperref}
 
 \theoremstyle{plain}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{corollary}[theorem]{Corollary}
-%\newtheorem{lemma}[theorem]{Lemma}
+%% \newtheorem{theorem}{Theorem}[section]
+%% \newtheorem{lemma}[theorem]{Lemma}
+%% (this is a short paper with only one lemma)
 \newtheorem{lemma}{Lemma}
-\newtheorem{prop}[theorem]{Proposition}
-\newtheorem{assumption}[theorem]{Assumption}
-
-\theoremstyle{definition}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{example}[theorem]{Example}
-\newtheorem{question}[theorem]{Question}
-\newcounter{claim}
-\newtheorem{claim}[claim]{Claim}
-\newcounter{conjecture}
-\newtheorem{conjecture}[conjecture]{Conjecture}
-\newtheorem*{Lemma}{Lemma}
-\newtheorem*{Prop}{Proposition}
-
- \theoremstyle{remark}
- \newtheorem*{remark}{Remark}
- \newtheorem*{remarks}{Remarks}
- \newtheorem*{notation}{Notation}
-
-\DeclareMathOperator{\dom}{dom}
 
 \newcommand{\<}{\ensuremath{\langle}}
 \renewcommand{\>}{\ensuremath{\rangle}}
 \renewcommand{\phi}{\ensuremath{\varphi}}
-
 \newcommand{\lb}{\ensuremath{\llbracket}}
 \newcommand{\rb}{\ensuremath{\rrbracket}}
-
-\newcommand{\N}{\ensuremath{\mathbb{N}}}
 \newcommand{\bA}{\ensuremath{\mathbf{A}}}
 \newcommand{\bB}{\ensuremath{\mathbf{B}}}
 \newcommand{\bC}{\ensuremath{\mathbf{C}}}
-\newcommand{\rel}[1]{\ensuremath{\mathbin{#1}}}
-\newcommand{\res}{\ensuremath{\upharpoonright}}  % restriction
-
-% binary operations
 \renewcommand{\leq}{\ensuremath{\leqslant}}
 \renewcommand{\nleq}{\ensuremath{\nleqslant}}
 \renewcommand{\lneq}{\ensuremath{\lneqq}}
 \renewcommand{\geq}{\ensuremath{\geqslant}}
-%\renewcommand{\lneq}{\ensuremath{\lneqslant}}
 \renewcommand{\gneq}{\ensuremath{\gneqslant}}
 \renewcommand{\ngeq}{\ensuremath{\ngeqslant}}
-\newcommand{\ssubnormal}{\ensuremath{\vartriangleleft}}
-\newcommand{\subnormal}{\ensuremath{\trianglelefteqslant}}
-\newcommand{\supnormal}{\ensuremath{\trianglerighteqslant}}
-\newcommand{\notsubnormal}{\ensuremath{\ntrianglelefteqslant}}
-\newcommand{\meet}{\ensuremath{\wedge}}
-\newcommand{\join}{\ensuremath{\vee}}
-\newcommand{\Meet}{\ensuremath{\bigwedge}}
 \renewcommand{\Join}{\ensuremath{\bigvee}}
-
-\newcommand{\Eq}{\ensuremath{\operatorname{Eq}}}
-\newcommand{\bEq}{\ensuremath{\mathbf{Eq}}}
-\newcommand{\Cg}{\ensuremath{\operatorname{Cg}}}
-\newcommand{\Sg}{\ensuremath{\operatorname{Sg}}}
-\newcommand{\SD}{\ensuremath{\operatorname{SD}}}
 \newcommand{\Con}{\ensuremath{\operatorname{Con}}}
 \newcommand{\Sub}{\ensuremath{\operatorname{Sub}}}
 \newcommand{\NSub}{\ensuremath{\operatorname{NSub}}}
-\newcommand{\Pol}{\ensuremath{\operatorname{Pol}}}
-\newcommand{\Clo}{\ensuremath{\operatorname{Clo}}}
-\newcommand{\Sym}{\ensuremath{\operatorname{Sym}}}
-\newcommand{\core}{\ensuremath{\operatorname{core}}}
-
 \renewcommand{\phi}{\ensuremath{\varphi}}
-\newcommand{\two}{\ensuremath{\mathbf{2}}}
-\newcommand{\three}{\ensuremath{\mathbf{3}}}
-
-
-
 
 
 
@@ -100,10 +45,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \title[Isotopic algebras]{Isotopic algebras with nonisomorphic congruence lattices}
-%\date{February 9, 2013}
 
 %% First author (Note: The order of the items here is important!)
-\author{William DeMeo}
+\author[W. DeMeo]{William DeMeo}
 \email{williamdemeo@gmail.com}
 \urladdr{http://williamdemeo.org}
 \address{Department of Mathematics\\
@@ -116,15 +60,10 @@ University of South Carolina\\Columbia 29208\\USA}
 
 %% AMS subject classification; see http://www.ams.org/msc
 %% Only one Primary. Possibly several Secondary.
-\subjclass[2010]{Primary: 08A30; Secondary: 08A60, 06B10.} %, 06B15.}
+\subjclass[2010]{Primary: 08A30; Secondary: 08A60, 06B10.}
 
-%% AMS subject classification; see http://www.ams.org/msc
-%% Only one Primary. Possibly several Secondary.
-%\subjclass[2010]{Primary: 08A30; Secondary: 08A60, 06B10.} %, 06B15.}
 %% Keywords and phrases
 \keywords{finite algebras; isotopy; isotopic algebras; congruence lattices}
-%% Keywords and phrases
-%\keywords{congruence lattice, finite algebra, finite lattice representations}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -134,13 +73,11 @@ University of South Carolina\\Columbia 29208\\USA}
 
 \begin{abstract}
 We present pairs of isotopic algebras with congruence lattices of different
-orders, thus answering negatively the question of whether isotopic algebras
-must have isomorphic congruence lattices.  
+sizes, thus answering negatively the question of whether isotopic algebras
+must have isomorphic congruence lattices.
 \end{abstract}
 
 \maketitle
-%% \setcounter{section}{+1}
-%% \setcounter{secnumdepth}{2}
 
 It is well known that two algebras in a congruence modular variety that are
 isotopic have isomorphic congruence lattices.  In fact, this result holds more
@@ -227,10 +164,6 @@ cosets of $T_1$ in $G$, and whose operations are left multiplication by elements
 of $G$. 
 That is $\bA = \< G/T_1, G^{\bA}\>$ 
 where, for each $g\in G$, the operation $g^{\bA} \in G^{\bA}$ is defined by
-% \[
-% g^{\bA}(xT_1) = 
-% (gx)T_1 \qquad ( xT_1 \in G/T_1 ).
-% \]
 $g^{\bA}(xT_1) = (gx)T_1$.
 Define the algebra $\bC = \< G/T_2, G^{\bC}\>$ similarly.  
 
@@ -266,11 +199,12 @@ $\Con \bB \cong\NSub(S) \lneq\Sub(S) \cong  \Con \bA$.
 The foregoing describes a class of examples, indexed by the group $S$.  The
 group $S$ must be a non-Dedekind group but is otherwise arbitrary and can be
 chosen so that $\Con\bA$ and $\Con\bB$ are not only nonisomorphic, but also 
-very different in size. For example, if $S$ is a finite nonabelian simple
-group, then $\Con\bB$ has just two elements, while
-$\Con \bA \cong \Sub(S)$ can be enormous.
+very different in size. For example, take a nonabelian
+simple group $S$ with subgroup lattice $\Sub(S)\cong \Con\bA$ as large as you
+like. By simplicity, $\NSub(S)\cong \Con \bB$ will have just two elements.
 
-We conclude with the easy proofs of three claims which establish that $\phi$ is an isomorphism.
+We conclude with the easy proofs of three claims which establish that $\phi$ is
+an isomorphism. 
 \\[4pt]
 {\it Claim 1:} $\phi$ is a function.\\[2pt]
 {\it Proof:} Suppose $(xT_1, yT_2) = (x'T_1, y'T_2)$.  Note that 
@@ -290,7 +224,6 @@ $(a_2,b_2) \in \phi$ and $a_1 = a_2$, then $b_1 = b_2$, so $\phi$ is a function.
 $g = (g_1, g_2) \in G$, for
 $xT_1 = (x_1, x_2)T_1 \in G/T_1$, and for
 $yT_2 = (y_1, y_2)T_2 \in G/T_2$, we have
-%$ xD = (x_1, x_2)D \in G/D$, let
 \begin{align*}
 \phi(g^{\bA\times \bC}(xT_1, yT_2)) 
 &= \phi((g_1x_1,g_2x_2)T_1, (g_1y_1,g_2y_2)T_2) \\
@@ -313,17 +246,26 @@ Then, as above,
 $(y_1,y_2)T_2 = (y'_1,y'_2)T_2$ implies $y_1 = y_1'$.  Therefore,
  since $(x_2,y_1)^{-1}(x'_2,y'_1) \in D$, we have
 $x_2^{-1}x'_2 = y_1^{-1}y'_1 = 1$,  
-so %$x_2 = x_2'$, so
+so 
 $(x_1,x_2)$ and $(x'_1,x'_2)$ can 
 only differ in the first coordinate.  It follows that
 $(x_1,x_2)T_1 = (x'_1,x_2)T_1$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  BIBLIOGRAPHY                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Commands produced by BibTeX  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \def\cprime{$'$} \def\cprime{$'$}
   \def\ocirc#1{\ifmmode\setbox0=\hbox{$#1$}\dimen0=\ht0 \advance\dimen0
   by1pt\rlap{\hbox to\wd0{\hss\raise\dimen0
   \hbox{\hskip.2em$\scriptscriptstyle\circ$}\hss}}#1\else {\accent"17 #1}\fi}
 \begin{thebibliography}{1}
 \providecommand{\url}[1]{{#1}}
-\providecommand{\urlprefix}{URL: }
+\providecommand{\urlprefix}{URL }
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
   \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
@@ -331,7 +273,7 @@ $(x_1,x_2)T_1 = (x'_1,x_2)T_1$.
 
 \bibitem{DTP}
 DeMeo, W.: {D}edekind's {T}ransposition {P}rinciple for lattices of equivalence
-  relations (2012).
+  relations (2012)
 \newblock \urlprefix\url{http://arxiv.org/abs/1301.6788}
 
 \bibitem{alvi:1987}
@@ -340,6 +282,6 @@ McKenzie, R.N., McNulty, G.F., Taylor, W.F.: Algebras, lattices, varieties.
 \newblock Wadsworth \& Brooks/Cole, Monterey, CA (1987)
 
 \end{thebibliography}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
 
