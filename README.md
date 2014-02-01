@@ -4,9 +4,9 @@ Isotopy
 This repository contains an article
 that has been accepted for publication in the journal [Algebra Universalis](http://link.springer.com/journal/12).
 
-**Title:** Isotopic algebras with nonisomorphic congruence lattices  
-**Author:** William DeMeo (williamdemeo at gmail)  
-**Date:** February 9, 2013  
+**Title:** *Isotopic algebras with nonisomorphic congruence lattices*  
+**Author:** William DeMeo [@williamdemeo](https://github.com/williamdemeo)  
+**Date:** January 26, 2014  
 **Institution:** Department of Mathematics, University of South Carolina; Columbia 29208; USA  
 **Keywords:** isotopy; isotopic algebras; congruence lattice  
 
