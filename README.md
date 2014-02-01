@@ -15,12 +15,10 @@ sizes, thus answering negatively the question of whether isotopic algebras must
 have isomorphic congruence lattices. 
 
 The paper has been accepted and is in the final editorial stages. It should
-appear in print sometime in 2014.  The latest revision is in the tex directory.
+appear in print sometime in 2014.
 
 For questions, comments, or suggestions please [submit an issue][].
 
 Thanks for your interest in this work!
-
-[@williamdemeo](https://github.com/williamdemeo)
 
 [submit an issue]: https://github.com/williamdemeo/Isotopy/issues
